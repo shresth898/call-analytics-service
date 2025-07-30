@@ -1,0 +1,20 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - OPENAI_API_KEY=your_key_here
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER=user
+      POSTGRES_PASSWORD=pass
+      POSTGRES_DB=calls
+    ports:
+      - "5432:5432"

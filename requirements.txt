@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy
+alembic
+asyncpg
+sentence-transformers
+transformers
+faker
+pydantic
+python-dotenv
+psycopg2-binary
